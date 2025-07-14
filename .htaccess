@@ -1,0 +1,11 @@
+DirectoryIndex index.html index.php
+RewriteEngine On
+
+# Redireciona todas as requisições para o index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+<IfModule mod_env.c>
+    SetEnv OPENROUTER_API_KEY ""
+</IfModule>

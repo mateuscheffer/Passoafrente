@@ -1,0 +1,205 @@
+2025-03-26 17:25:19 - null
+2025-03-27 18:10:55 - Received quiz results request
+2025-03-27 18:10:55 - Raw input: {"age":"1","correctedAge":"0","isAgeAdjusted":true,"answers":[{"area":"Controle de Cabeça","question":"O bebê tenta levantar a cabeça quando colocado de bruços?","answer":"Não"},{"area":"Controle de Cabeça","question":"O bebê acompanha objetos ou rostos com os olhos?","answer":"Não"},{"area":"Controle de Cabeça","question":"O bebê reage a sons altos?","answer":"Sim"}],"babyInfo":{"name":"mateus","cpf":"11111111111","isPremature":true,"prematureWeeks":"30","isPCD":false,"pcdDescription":null}}
+2025-03-27 18:10:55 - Sending prompt to AI
+2025-03-27 18:10:55 - Sending request to OpenRouter API
+2025-03-27 18:11:24 - Response code: 200
+2025-03-27 18:11:24 - Successfully received AI analysis
+2025-03-27 18:14:15 - Received quiz results request
+2025-03-27 18:14:15 - Raw input: {"age":"5","correctedAge":"5","isAgeAdjusted":false,"answers":[{"area":"Controle de Tronco","question":"O bebê rola de barriga para cima para barriga para baixo e vice-versa?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê transfere objetos de uma mão para outra?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê balbucia cadeias de sons (\"ba-ba\", \"ma-ma\")?","answer":"Sim"}],"babyInfo":{"name":"Mateus","cpf":"61515711","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-03-27 18:14:15 - Sending prompt to AI
+2025-03-27 18:14:15 - Sending request to OpenRouter API
+2025-03-27 18:14:31 - Response code: 200
+2025-03-27 18:14:31 - Successfully received AI analysis
+2025-03-27 18:17:24 - Received quiz results request
+2025-03-27 18:17:24 - Raw input: {"age":"12","correctedAge":"12","isAgeAdjusted":false,"answers":[{"area":"Andar","question":"O bebê anda sozinho?","answer":"Não"},{"area":"Andar","question":"O bebê faz rabiscos no papel quando lhe é dado um lápis?","answer":"Sim"},{"area":"Andar","question":"O bebê fala pelo menos 2-3 palavras com significado?","answer":"Sim"}],"babyInfo":{"name":"mateus","cpf":"123123321","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-03-27 18:17:24 - Sending prompt to AI
+2025-03-27 18:17:24 - Sending request to OpenRouter API
+2025-03-27 18:17:43 - Response code: 200
+2025-03-27 18:17:43 - Successfully received AI analysis
+2025-03-27 22:53:12 - Received quiz results request
+2025-03-27 22:53:12 - Raw input: {"age":"9","correctedAge":"8","isAgeAdjusted":true,"answers":[{"area":"Ficar em Pé","question":"O bebê se puxa para ficar em pé com apoio?","answer":"Não"},{"area":"Ficar em Pé","question":"O bebê pega objetos pequenos usando a pinça fina (polegar e indicador)?","answer":"Não"},{"area":"Ficar em Pé","question":"O bebê imita sons ou gestos simples?","answer":"Sim"}],"babyInfo":{"name":"Gjhhh","cpf":"02869;9383","isPremature":true,"prematureWeeks":"34","isPCD":false,"pcdDescription":null}}
+2025-03-27 22:53:12 - Sending prompt to AI
+2025-03-27 22:53:12 - Sending request to OpenRouter API
+2025-03-27 22:53:35 - Response code: 200
+2025-03-27 22:53:35 - Successfully received AI analysis
+2025-04-02 14:47:10 - Received quiz results request
+2025-04-02 14:47:10 - Raw input: {"age":"4","correctedAge":"4","isAgeAdjusted":false,"answers":[{"area":"Controle de Tronco","question":"O bebê consegue se sentar com apoio?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê segura e manipula pequenos objetos?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê vira a cabeça em direção a sons?","answer":"Sim"}],"babyInfo":{"name":"Mateys","cpf":"65687","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-02 14:47:10 - Sending prompt to AI
+2025-04-02 14:47:10 - Sending request to OpenRouter API
+2025-04-02 14:47:28 - Response code: 200
+2025-04-02 14:47:28 - Successfully received AI analysis
+2025-04-06 19:08:07 - Received quiz results request
+2025-04-06 19:08:07 - Raw input: {"age":"2","correctedAge":"2","isAgeAdjusted":false,"answers":[{"area":"Controle de Cabeça","question":"O bebê sustenta a cabeça firmemente quando segurado na posição vertical?","answer":"Sim"},{"area":"Controle de Cabeça","question":"O bebê segue objetos com os olhos em um arco de 180 graus?","answer":"Não"},{"area":"Controle de Cabeça","question":"O bebê emite sons como \"aah\", \"ooh\" ou \"guu\"?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"asd","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-06 19:08:07 - Sending prompt to AI
+2025-04-06 19:08:07 - Sending request to OpenRouter API
+2025-04-06 19:08:35 - Response code: 200
+2025-04-06 19:08:35 - Successfully received AI analysis
+2025-04-06 19:08:48 - Received quiz results request
+2025-04-06 19:08:48 - Raw input: {"age":"7","correctedAge":"7","isAgeAdjusted":false,"answers":[{"area":"Engatinhar","question":"O bebê se arrasta ou engatinha?","answer":"Não"},{"area":"Engatinhar","question":"O bebê bate dois objetos um contra o outro?","answer":"Não"},{"area":"Engatinhar","question":"O bebê demonstra ansiedade de separação?","answer":"Sim"}],"babyInfo":{"email":"aA@a.com","name":"asd","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-06 19:08:48 - Sending prompt to AI
+2025-04-06 19:08:48 - Sending request to OpenRouter API
+2025-04-06 19:09:18 - Response code: 200
+2025-04-06 19:09:18 - Successfully received AI analysis
+2025-04-08 01:47:27 - Received quiz results request
+2025-04-08 01:47:27 - Raw input: {"age":"9","correctedAge":"9","isAgeAdjusted":false,"answers":[{"area":"Engatinhar","question":"O bebê engatinha com coordenação?","answer":"Não"},{"area":"Engatinhar","question":"O bebê coloca objetos em um recipiente?","answer":"Sim"},{"area":"Engatinhar","question":"O bebê entende comandos simples como \"não\" ou \"dá\"?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"asdasd","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-08 01:47:27 - Sending prompt to AI
+2025-04-08 01:47:27 - Sending request to OpenRouter API
+2025-04-08 01:47:52 - Response code: 200
+2025-04-08 01:47:52 - Successfully received AI analysis
+2025-04-08 01:49:06 - Received quiz results request
+2025-04-08 01:49:06 - Raw input: {"age":"9","correctedAge":"5","isAgeAdjusted":true,"answers":[{"area":"Controle de Tronco","question":"O bebê rola de barriga para cima para barriga para baixo e vice-versa?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê transfere objetos de uma mão para outra?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê balbucia cadeias de sons (\"ba-ba\", \"ma-ma\")?","answer":"Sim"}],"babyInfo":{"email":"amteus.cheffe@aa.com","name":"mateus","isPremature":true,"prematureWeeks":"24","isPCD":true,"pcdDescription":"sindrome de down"}}
+2025-04-08 01:49:06 - Sending prompt to AI
+2025-04-08 01:49:06 - Sending request to OpenRouter API
+2025-04-08 01:49:36 - cURL Error: Operation timed out after 30000 milliseconds with 726 bytes received
+2025-04-08 01:49:36 - Failed to generate AI analysis
+2025-04-08 01:49:58 - Received quiz results request
+2025-04-08 01:49:58 - Raw input: {"age":"3","correctedAge":"1","isAgeAdjusted":true,"answers":[{"area":"Controle de Tronco","question":"O bebê rola de barriga para cima para o lado?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê tenta alcançar objetos?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê ri alto?","answer":"Sim"}],"babyInfo":{"email":"asdas@a.com","name":"123sadsa","isPremature":true,"prematureWeeks":"34","isPCD":false,"pcdDescription":null}}
+2025-04-08 01:49:58 - Sending prompt to AI
+2025-04-08 01:49:58 - Sending request to OpenRouter API
+2025-04-08 01:50:28 - cURL Error: Operation timed out after 30000 milliseconds with 715 bytes received
+2025-04-08 01:50:28 - Failed to generate AI analysis
+2025-04-08 01:50:45 - Received quiz results request
+2025-04-08 01:50:45 - Raw input: {"age":"3","correctedAge":"3","isAgeAdjusted":false,"answers":[{"area":"Controle de Tronco","question":"O bebê rola de barriga para cima para o lado?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê tenta alcançar objetos?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê ri alto?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"asd","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-08 01:50:45 - Sending prompt to AI
+2025-04-08 01:50:45 - Sending request to OpenRouter API
+2025-04-08 01:51:15 - cURL Error: Operation timed out after 30000 milliseconds with 737 bytes received
+2025-04-08 01:51:15 - Failed to generate AI analysis
+2025-04-08 01:53:27 - Received quiz results request
+2025-04-08 01:53:27 - Raw input: {"age":"9","correctedAge":"9","isAgeAdjusted":false,"answers":[{"area":"Engatinhar","question":"O bebê engatinha com coordenação?","answer":"Não"},{"area":"Engatinhar","question":"O bebê coloca objetos em um recipiente?","answer":"Não"},{"area":"Engatinhar","question":"O bebê entende comandos simples como \"não\" ou \"dá\"?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"213123","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-08 01:53:27 - Sending prompt to AI
+2025-04-08 01:53:27 - Sending request to OpenRouter API
+2025-04-08 01:53:57 - cURL Error: Operation timed out after 30000 milliseconds with 770 bytes received
+2025-04-08 01:53:57 - Failed to generate AI analysis
+2025-04-08 01:57:44 - Received quiz results request
+2025-04-08 01:57:44 - Raw input: {"age":"7","correctedAge":"7","isAgeAdjusted":false,"answers":[{"area":"Engatinhar","question":"O bebê se arrasta ou engatinha?","answer":"Não"},{"area":"Engatinhar","question":"O bebê bate dois objetos um contra o outro?","answer":"Não"},{"area":"Engatinhar","question":"O bebê demonstra ansiedade de separação?","answer":"Não"}],"babyInfo":{"email":"a@a.com","name":"asd","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-08 01:57:44 - Sending prompt to AI
+2025-04-08 01:57:44 - Sending request to OpenRouter API
+2025-04-08 01:58:04 - Response code: 200
+2025-04-08 01:58:04 - Successfully received AI analysis
+2025-04-08 01:58:54 - Received quiz results request
+2025-04-08 01:58:54 - Raw input: {"age":"9","correctedAge":"5","isAgeAdjusted":true,"answers":[{"area":"Controle de Tronco","question":"O bebê rola de barriga para cima para barriga para baixo e vice-versa?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê transfere objetos de uma mão para outra?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê balbucia cadeias de sons (\"ba-ba\", \"ma-ma\")?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":true,"prematureWeeks":"24","isPCD":true,"pcdDescription":"Sindrome de down"}}
+2025-04-08 01:58:54 - Sending prompt to AI
+2025-04-08 01:58:54 - Sending request to OpenRouter API
+2025-04-08 01:59:23 - Response code: 200
+2025-04-08 01:59:23 - Successfully received AI analysis
+2025-04-08 02:12:16 - Received quiz results request
+2025-04-08 02:12:16 - Raw input: {"age":"6","correctedAge":"4","isAgeAdjusted":true,"answers":[{"area":"Controle de Tronco","question":"O bebê consegue se sentar com apoio?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê segura e manipula pequenos objetos?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê vira a cabeça em direção a sons?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":true,"prematureWeeks":"34","isPCD":true,"pcdDescription":"PARALISIA"}}
+2025-04-08 02:12:16 - Sending prompt to AI
+2025-04-08 02:12:16 - Sending request to OpenRouter API
+2025-04-08 02:12:40 - Response code: 200
+2025-04-08 02:12:40 - Successfully received AI analysis
+2025-04-08 02:14:27 - Received quiz results request
+2025-04-08 02:14:27 - Raw input: {"age":"8","correctedAge":"8","isAgeAdjusted":false,"answers":[{"area":"Ficar em Pé","question":"O bebê se puxa para ficar em pé com apoio?","answer":"Não"},{"area":"Ficar em Pé","question":"O bebê pega objetos pequenos usando a pinça fina (polegar e indicador)?","answer":"Sim"},{"area":"Ficar em Pé","question":"O bebê imita sons ou gestos simples?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-08 02:14:27 - Sending prompt to AI
+2025-04-08 02:14:27 - Sending request to OpenRouter API
+2025-04-08 02:14:37 - Response code: 200
+2025-04-08 02:14:37 - Successfully received AI analysis
+2025-04-08 02:19:13 - Received quiz results request
+2025-04-08 02:19:13 - Raw input: {"age":"5","correctedAge":"3","isAgeAdjusted":true,"answers":[{"area":"Controle de Tronco","question":"O bebê rola de barriga para cima para o lado?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê tenta alcançar objetos?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê ri alto?","answer":"Não"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":true,"prematureWeeks":"32","isPCD":true,"pcdDescription":"ss"}}
+2025-04-08 02:19:13 - Sending prompt to AI
+2025-04-08 02:19:13 - Sending request to OpenRouter API
+2025-04-08 02:19:38 - Response code: 200
+2025-04-08 02:19:38 - Successfully received AI analysis
+2025-04-08 02:22:45 - Received quiz results request
+2025-04-08 02:22:45 - Raw input: {"age":"7","correctedAge":"7","isAgeAdjusted":false,"answers":[{"area":"Engatinhar","question":"O bebê se arrasta ou engatinha?","answer":"Não"},{"area":"Engatinhar","question":"O bebê bate dois objetos um contra o outro?","answer":"Sim"},{"area":"Engatinhar","question":"O bebê demonstra ansiedade de separação?","answer":"Sim"}],"babyInfo":{"email":"aa@a.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-08 02:22:45 - Sending prompt to AI
+2025-04-08 02:22:45 - Sending request to OpenRouter API
+2025-04-08 02:23:15 - cURL Error: Operation timed out after 30000 milliseconds with 737 bytes received
+2025-04-08 02:23:15 - Failed to generate AI analysis
+2025-04-08 02:23:18 - Received quiz results request
+2025-04-08 02:23:18 - Raw input: {"age":"8","correctedAge":"8","isAgeAdjusted":false,"answers":[{"area":"Ficar em Pé","question":"O bebê se puxa para ficar em pé com apoio?","answer":"Não"},{"area":"Ficar em Pé","question":"O bebê pega objetos pequenos usando a pinça fina (polegar e indicador)?","answer":"Sim"},{"area":"Ficar em Pé","question":"O bebê imita sons ou gestos simples?","answer":"Não"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-08 02:23:18 - Sending prompt to AI
+2025-04-08 02:23:18 - Sending request to OpenRouter API
+2025-04-08 02:23:39 - Response code: 200
+2025-04-08 02:23:39 - Successfully received AI analysis
+2025-04-08 11:04:55 - Received quiz results request
+2025-04-08 11:04:55 - Raw input: {"age":"6","correctedAge":"4","isAgeAdjusted":true,"answers":[{"area":"Controle de Tronco","question":"O bebê consegue se sentar com apoio?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê segura e manipula pequenos objetos?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê vira a cabeça em direção a sons?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":true,"prematureWeeks":"34","isPCD":true,"pcdDescription":"sindrome de down"}}
+2025-04-08 11:04:55 - Sending prompt to AI
+2025-04-08 11:04:55 - Sending request to OpenRouter API
+2025-04-08 11:05:03 - Response code: 200
+2025-04-08 11:05:03 - Successfully received AI analysis
+2025-04-08 11:05:50 - Received quiz results request
+2025-04-08 11:05:50 - Raw input: {"age":"5","correctedAge":"5","isAgeAdjusted":false,"answers":[{"area":"Controle de Tronco","question":"O bebê rola de barriga para cima para barriga para baixo e vice-versa?","answer":"Não"},{"area":"Controle de Tronco","question":"O bebê transfere objetos de uma mão para outra?","answer":"Sim"},{"area":"Controle de Tronco","question":"O bebê balbucia cadeias de sons (\"ba-ba\", \"ma-ma\")?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-08 11:05:50 - Sending prompt to AI
+2025-04-08 11:05:50 - Sending request to OpenRouter API
+2025-04-08 11:06:10 - Response code: 200
+2025-04-08 11:06:10 - Successfully received AI analysis
+2025-04-08 20:22:34 - Received quiz results request
+2025-04-08 20:22:34 - Raw input: {"age":"3","correctedAge":"1","isAgeAdjusted":true,"answers":[{"area":"Controle de Cabeça","question":"O bebê consegue levantar a cabeça e o peito quando está de bruços?","answer":"Não"},{"area":"Controle de Cabeça","question":"O bebê abre e fecha as mãos?","answer":"Sim"},{"area":"Controle de Cabeça","question":"O bebê sorri em resposta ao rosto ou voz dos pais?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":true,"prematureWeeks":"33","isPCD":true,"pcdDescription":"sindrome de down"}}
+2025-04-08 20:22:34 - Sending prompt to AI
+2025-04-08 20:22:34 - Sending request to OpenRouter API
+2025-04-08 20:22:49 - Response code: 200
+2025-04-08 20:22:49 - Successfully received AI analysis
+2025-04-08 20:23:39 - Received quiz results request
+2025-04-08 20:23:39 - Raw input: {"age":"7","correctedAge":"7","isAgeAdjusted":false,"answers":[{"area":"Engatinhar","question":"O bebê se arrasta ou engatinha?","answer":"Não"},{"area":"Engatinhar","question":"O bebê bate dois objetos um contra o outro?","answer":"Sim"},{"area":"Engatinhar","question":"O bebê demonstra ansiedade de separação?","answer":"Sim"}],"babyInfo":{"email":"nicholas.borja@hotmail.com","name":"nikao","isPremature":false,"prematureWeeks":null,"isPCD":true,"pcdDescription":"down"}}
+2025-04-08 20:23:39 - Sending prompt to AI
+2025-04-08 20:23:39 - Sending request to OpenRouter API
+2025-04-08 20:23:58 - Response code: 200
+2025-04-08 20:23:58 - Successfully received AI analysis
+2025-04-09 01:14:22 - Received quiz results request
+2025-04-09 01:14:22 - Raw input: {"age":"6","correctedAge":"6","isAgeAdjusted":false,"answers":[{"area":"Sentar","question":"O bebê se senta sozinho sem apoio?","answer":"Não"},{"area":"Sentar","question":"O bebê usa o movimento de pinça (polegar e indicador) para pegar objetos pequenos?","answer":"Sim"},{"area":"Sentar","question":"O bebê responde ao próprio nome?","answer":"Sim"}],"babyInfo":{"email":"a@a.copm","name":"asdasd","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-09 01:14:22 - Sending prompt to AI
+2025-04-09 01:14:22 - Sending request to OpenRouter API
+2025-04-09 01:14:38 - Response code: 200
+2025-04-09 01:14:38 - Successfully received AI analysis
+2025-04-09 01:18:40 - Received quiz results request
+2025-04-09 01:18:40 - Raw input: {"age":"5","correctedAge":"5","isAgeAdjusted":false,"answers":[{"area":"Controle de Tronco","question":"Quando está de bruços, seu bebê consegue se apoiar nas mãos, com os braços estendidos e o peito bem elevado? 👉 (Postura com extensão completa dos membros superiores)","answer":"Sim"},{"area":"Controle de Tronco","question":"Seu bebê rola sozinho de barriga para baixo para a posição de barriga para cima? 👉 (Rolamento de prona para supino – esperado até 5 meses)","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando está deitado de barriga para cima, seu bebê pega os próprios pés com as mãos? 👉 (Integração sensorial e controle de tronco inferior)","answer":"Não"},{"area":"Controle de Tronco","question":"Quando você o coloca sentado com apoio, ele consegue manter a cabeça e o tronco bem alinhados, sem tombar para os lados? 👉 (Estabilidade postural na posição sentada com suporte)","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando é segurado de pé com os pés no chão, seu bebê sustenta o peso do corpo com as pernas estendidas e firmes? 👉 (Reação de apoio ativo esperado até o 5º mês)","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-09 01:18:40 - Sending prompt to AI
+2025-04-09 01:18:40 - Sending request to OpenRouter API
+2025-04-09 01:19:03 - Response code: 200
+2025-04-09 01:19:03 - Successfully received AI analysis
+2025-04-09 01:25:59 - Received quiz results request
+2025-04-09 01:25:59 - Raw input: {"age":"5","correctedAge":"5","isAgeAdjusted":false,"answers":[{"area":"Controle de Tronco","question":"Quando está de bruços, seu bebê consegue se apoiar nas mãos, com os braços estendidos e o peito bem elevado?","answer":"Não"},{"area":"Controle de Tronco","question":"Seu bebê rola sozinho de barriga para baixo para a posição de barriga para cima?","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando está deitado de barriga para cima, seu bebê pega os próprios pés com as mãos?","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando você o coloca sentado com apoio, ele consegue manter a cabeça e o tronco bem alinhados, sem tombar para os lados?","answer":"Não"},{"area":"Controle de Tronco","question":"Quando é segurado de pé com os pés no chão, seu bebê sustenta o peso do corpo com as pernas estendidas e firmes?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-09 01:25:59 - Sending prompt to AI
+2025-04-09 01:25:59 - Sending request to OpenRouter API
+2025-04-09 01:26:12 - Response code: 200
+2025-04-09 01:26:12 - Successfully received AI analysis
+2025-04-09 01:27:21 - Received quiz results request
+2025-04-09 01:27:21 - Raw input: {"age":"9","correctedAge":"9","isAgeAdjusted":false,"answers":[{"area":"Engatinhar","question":"Seu bebê engatinha ou se arrasta no chão para se locomover até brinquedos ou pessoas?","answer":"Não"},{"area":"Engatinhar","question":"Seu bebê consegue passar da posição de deitado para sentado sem ajuda?","answer":"Sim"},{"area":"Engatinhar","question":"Seu bebê assume a posição de quatro apoios (mãos e joelhos) e balança o corpo para frente e para trás? ","answer":"Sim"},{"area":"Engatinhar","question":"Seu bebê tenta se apoiar em móveis ou objetos baixos para levantar até ficar de pé?","answer":"Sim"},{"area":"Engatinhar","question":"Quando está de pé com apoio, seu bebê sustenta bem o peso nas pernas e fica nessa posição por um tempinho?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"asd","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-09 01:27:21 - Sending prompt to AI
+2025-04-09 01:27:21 - Sending request to OpenRouter API
+2025-04-09 01:27:30 - Response code: 200
+2025-04-09 01:27:30 - Successfully received AI analysis
+2025-04-09 01:29:28 - Received quiz results request
+2025-04-09 01:29:28 - Raw input: {"age":"3","correctedAge":"3","isAgeAdjusted":false,"answers":[{"area":"Controle de Tronco","question":"Quando está de bruços, seu bebê consegue levantar bem a cabeça e parte do peito, apoiando-se nos antebraços? (Postura de esfinge – controle cervical e torácico)","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando está de barriga para cima, seu bebê brinca com as mãozinhas ou junta as mãos na frente do corpo? (Coordenação e atenção visual/manual em supino)","answer":"Sim"},{"area":"Controle de Tronco","question":"Seu bebê vira a cabeça com facilidade para os dois lados quando está de bruços? (Controle lateral da cabeça em pronação)","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando você segura o bebê sentado com apoio, ele mantém a cabeça firme e erguida sem cair para frente ou para os lados? (Controle cervical quase completo na posição sentada)","answer":"Sim"},{"area":"Controle de Tronco","question":"Ao ser segurado em pé com apoio, seu bebê empurra o chão com os dois pezinhos? (Ativação do reflexo de apoio em posição vertical)","answer":"Não"},{"area":"Controle de Tronco","question":"Seu bebê começa a rolar de lado (lateralmente), mesmo que ainda não complete o giro? (Início do rolamento lateral – movimento de transição)","answer":"Sim"}],"babyInfo":{"email":"a@a.con","name":"Mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-09 01:29:28 - Sending prompt to AI
+2025-04-09 01:29:28 - Sending request to OpenRouter API
+2025-04-09 01:29:40 - Response code: 200
+2025-04-09 01:29:40 - Successfully received AI analysis
+2025-04-09 11:19:42 - Received quiz results request
+2025-04-09 11:19:42 - Raw input: {"age":"11","correctedAge":"11","isAgeAdjusted":false,"answers":[{"area":"Andar","question":"Seu bebê anda de lado com facilidade, segurando-se em móveis (anda lateralmente com apoio)?","answer":"Sim"},{"area":"Andar","question":"Seu bebê consegue ficar de pé sozinho por alguns segundos sem se segurar em nada?","answer":"Não"},{"area":"Andar","question":"Seu bebê se agacha e volta a ficar de pé sem apoio, ou segurando em algo?","answer":"Sim"},{"area":"Andar","question":"Seu bebê tenta dar alguns passinhos quando alguém o segura pelas mãos?","answer":"Sim"},{"area":"Andar","question":"Seu bebê se desloca com agilidade engatinhando por toda a casa, mesmo em diferentes direções?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"guilherme","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-09 11:19:42 - Sending prompt to AI
+2025-04-09 11:19:42 - Sending request to OpenRouter API
+2025-04-09 11:19:52 - Response code: 200
+2025-04-09 11:19:52 - Successfully received AI analysis
+2025-04-09 20:51:54 - Received quiz results request
+2025-04-09 20:51:54 - Raw input: {"age":"4","correctedAge":"4","isAgeAdjusted":false,"answers":[{"area":"Controle de Tronco","question":"Quando está de bruços, seu bebê levanta bem a cabeça e o peito, apoiando-se nos antebraços?","answer":"Não"},{"area":"Controle de Tronco","question":"Seu bebê consegue apoiar parte do peso do corpo nos cotovelos estendidos (braços retos) quando está de bruços? ","answer":"Não"},{"area":"Controle de Tronco","question":"Quando está de barriga para cima, seu bebê junta as mãos no centro do corpo? ","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando colocado sentado com apoio (como encostado em almofadas), ele mantém a cabeça estável sem cair para frente?","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando está deitado de barriga para cima, seu bebê tenta virar de lado (rolar lateralmente)? ","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando você segura o bebê em pé com apoio, ele estica as perninhas e empurra contra o chão com firmeza?","answer":"Sim"},{"area":"Controle de Tronco","question":"Quando a criança é puxada de deitada para sentada pelos braços, o movimento pode ser ajudado pelos músculos abdominais e pela flexão dos braços?","answer":"Sim"}],"babyInfo":{"email":"a@a.com","name":"Mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-09 20:51:54 - Sending prompt to AI
+2025-04-09 20:51:54 - Sending request to OpenRouter API
+2025-04-09 20:52:10 - Response code: 200
+2025-04-09 20:52:10 - Successfully received AI analysis
+2025-04-10 13:27:32 - Received quiz results request
+2025-04-10 13:27:32 - Raw input: {"age":"8","correctedAge":"6","isAgeAdjusted":true,"answers":[{"area":"Sentar","question":"Seu bebê rola sozinho de barriga para cima para a posição de bruços?","answer":"Não"},{"area":"Sentar","question":"Quando está de bruços, seu bebê estica bem os braços, apoiando-se nas mãos com os cotovelos retos?","answer":"Sim"},{"area":"Sentar","question":"Quando está sentado com apoio, seu bebê já usa as mãos para se equilibrar (coloca as mãos na frente do corpo)?","answer":"Não"},{"area":"Sentar","question":"Seu bebê pega brinquedos com uma das mãos com facilidade e leva até a boca?","answer":"Não"},{"area":"Sentar","question":"Seu bebê fica sentado com apoio e mantém o tronco e a cabeça firmes sem tombar para os lados?","answer":"Sim"}],"babyInfo":{"email":"jejshsjsh@gmail.com","name":"Jdjsjssb","isPremature":true,"prematureWeeks":"32","isPCD":false,"pcdDescription":null}}
+2025-04-10 13:27:32 - Sending prompt to AI
+2025-04-10 13:27:32 - Sending request to OpenRouter API
+2025-04-10 13:27:55 - Response code: 200
+2025-04-10 13:27:55 - Successfully received AI analysis
+2025-04-11 14:19:24 - Received quiz results request
+2025-04-11 14:19:24 - Raw input: {"age":"13","correctedAge":"13","isAgeAdjusted":false,"answers":[{"area":"Desenvolvimento Geral","question":"Anda mudando de direção (como fazer curvas)?","answer":"Não"},{"area":"Desenvolvimento Geral","question":"Sobe em móveis baixos, como almofadas ou sofá?","answer":"Sim"},{"area":"Desenvolvimento Geral","question":"Anda com objetos nas mãos sem perder o equilíbrio?","answer":"Sim"},{"area":"Desenvolvimento Geral","question":"Tenta subir escadas engatinhando ou com ajuda?","answer":"Sim"},{"area":"Desenvolvimento Geral","question":"Começa a tentar correr, mesmo que tropece?","answer":"Sim"}],"babyInfo":{"email":"aaa@aa.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-11 14:19:24 - Sending prompt to AI
+2025-04-11 14:19:24 - Sending request to OpenRouter API
+2025-04-11 14:19:40 - Response code: 200
+2025-04-11 14:19:40 - Successfully received AI analysis
+2025-04-16 00:21:09 - Received quiz results request
+2025-04-16 00:21:09 - Raw input: {"age":"13","correctedAge":"13","isAgeAdjusted":false,"answers":[{"area":"Desenvolvimento Geral","question":"Anda mudando de direção (como fazer curvas)?","answer":"Não"},{"area":"Desenvolvimento Geral","question":"Sobe em móveis baixos, como almofadas ou sofá?","answer":"Não"},{"area":"Desenvolvimento Geral","question":"Anda com objetos nas mãos sem perder o equilíbrio?","answer":"Sim"},{"area":"Desenvolvimento Geral","question":"Tenta subir escadas engatinhando ou com ajuda?","answer":"Sim"},{"area":"Desenvolvimento Geral","question":"Começa a tentar correr, mesmo que tropece?","answer":"Sim"}],"babyInfo":{"email":"aaa@aa.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-16 00:21:09 - Sending prompt to AI
+2025-04-16 00:21:09 - Sending request to OpenRouter API
+2025-04-16 00:21:20 - Response code: 200
+2025-04-16 00:21:20 - Successfully received AI analysis
+2025-04-16 00:24:45 - Received quiz results request
+2025-04-16 00:24:45 - Raw input: {"age":"13","correctedAge":"13","isAgeAdjusted":false,"answers":[{"area":"Desenvolvimento Geral","question":"Anda mudando de direção (como fazer curvas)?","answer":"Não"},{"area":"Desenvolvimento Geral","question":"Sobe em móveis baixos, como almofadas ou sofá?","answer":"Não"},{"area":"Desenvolvimento Geral","question":"Anda com objetos nas mãos sem perder o equilíbrio?","answer":"Não"},{"area":"Desenvolvimento Geral","question":"Tenta subir escadas engatinhando ou com ajuda?","answer":"Não"},{"area":"Desenvolvimento Geral","question":"Começa a tentar correr, mesmo que tropece?","answer":"Não"}],"babyInfo":{"email":"aaa@aa.com","name":"mateus","isPremature":false,"prematureWeeks":null,"isPCD":false,"pcdDescription":null}}
+2025-04-16 00:24:45 - Sending prompt to AI
+2025-04-16 00:24:45 - Sending request to OpenRouter API
+2025-04-16 00:24:53 - Response code: 200
+2025-04-16 00:24:53 - Successfully received AI analysis

@@ -1,0 +1,106 @@
+
+</head>
+
+<body>
+
+<main>
+  
+        <div class="container">
+
+            <div class="quiz-container">
+                <!-- Novos campos para informações do bebê -->
+                <div class="baby-info">
+                    <h2>Informações do Bebê</h2>
+                    <div class="form-group">
+                        <label for="babyEmail">Email:*</label>
+                        <input type="email" id="babyEmail" name="babyEmail" required>
+                        <small>As avaliações serão vinculadas a este email para futuras consultas.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="babyName">Nome do Bebê:*</label>
+                        <input type="text" id="babyName" name="babyName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="babyBirthdate">Data de Nascimento do Bebê:*</label>
+                        <input type="date" id="babyBirthdate" name="babyBirthdate" required>
+                        <br>
+                        <small>A idade do bebê será calculada automaticamente com base na data de nascimento.</small>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="isPremature" name="isPremature">
+                            <label for="isPremature">Bebê Prematuro</label>
+                        </div>
+                        <div id="prematureWeeksField" class="conditional-field">
+                            <label for="prematureWeeks">Semanas de Gestação:</label>
+                            <input type="number" id="prematureWeeks" name="prematureWeeks" min="24" max="36">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="isPCD" name="isPCD">
+                            <label for="isPCD">Pessoa com Deficiência (PCD)</label>
+                        </div>
+                        <div id="pcdDescriptionField" class="conditional-field">
+                            <label for="pcdDescription">Descreva a Deficiência:</label>
+                            <input type="text" id="pcdDescription" name="pcdDescription">
+                        </div>
+                        <label>Você tem alguma dúvida específica sobre o desenvolvimento do seu bebê?(Opcional)</label>
+                        <div class="form-group">
+                            <textarea id="userQuestion" name="userQuestion" rows="3" placeholder="Digite sua pergunta aqui..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <b>Recomendações de Profissionais (Opcional)</b>
+                            <p> Para que possamos sugerir profissionais qualificados próximos a você, como pediatras,
+                            fisioterapeutas ou outros especialistas, precisamos da sua autorização para acessar
+                            sua localização. Suas informações de localização serão usadas exclusivamente para este fim.</p>
+                             <div class="checkbox-group">
+                            <input type="checkbox" id="aceitaLocation">
+                            <label for="aceitaLocation">Sim, autorizo o acesso à minha localização para receber recomendações de
+   profissionais próximos.</label>
+   </div>
+                        </div>
+                
+                        
+                        
+                    </div>
+                    
+                        <!-- Campo para o usuário fazer perguntas -->
+        
+               
+
+
+                    <div class="form-group">
+                        <button type="button" id="calculateAgeBtn" class="btn primary-btn">Continuar</button>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Campo oculto para armazenar a idade calculada -->
+                <input type="hidden" id="babyAge" name="babyAge">
+
+                <div id="questionForm" class="question-form">
+                    <!-- Questions will be dynamically loaded here based on age selection -->
+                </div>
+                
+            
+                <div id="results">
+                    <h2>Resultados da Avaliação</h2>
+                    <div id="resultContent"></div>
+                    <div class="download-pdf">
+                        <button class="btn primary-btn" id="baixarPDF">Baixar Relatório PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+

@@ -1,0 +1,387 @@
+[30-May-2025 14:16:58 UTC] PHP Warning:  require_once(/home/u276298767/domains/passoafrente.site/public_html/api/../novo_db_manager.php): Failed to open stream: No such file or directory in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 15
+[30-May-2025 14:16:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u276298767/domains/passoafrente.site/public_html/api/../novo_db_manager.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 15
+[30-May-2025 14:17:05 UTC] PHP Warning:  require_once(/home/u276298767/domains/passoafrente.site/public_html/api/../novo_db_manager.php): Failed to open stream: No such file or directory in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 15
+[30-May-2025 14:17:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u276298767/domains/passoafrente.site/public_html/api/../novo_db_manager.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 15
+[2025-05-30 14:20:05] Generating PDF for evaluation ID: 7
+[2025-05-30 14:20:05] Evaluation data retrieved successfully
+[30-May-2025 14:20:05 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 103
+[2025-05-30 14:20:05] PDF filename set to: relatorio-Mateus-30-05-2025.pdf
+[2025-05-30 14:23:15] Generating PDF for evaluation ID: 7
+[2025-05-30 14:23:15] Evaluation data retrieved successfully
+[30-May-2025 14:23:15 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 103
+[2025-05-30 14:23:15] PDF filename set to: relatorio-Mateus-30-05-2025.pdf
+[2025-05-30 14:23:18] Generating PDF for evaluation ID: 7
+[2025-05-30 14:23:18] Evaluation data retrieved successfully
+[30-May-2025 14:23:18 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 103
+[2025-05-30 14:23:18] PDF filename set to: relatorio-Mateus-30-05-2025.pdf
+[2025-05-30 14:24:23] Generating PDF for evaluation ID: 7
+[2025-05-30 14:24:23] Evaluation data retrieved successfully
+[30-May-2025 14:24:23 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:24:23] PDF filename set to: relatorio-Mateus-30-05-2025.pdf
+[2025-05-30 14:30:23] Generating PDF for evaluation ID: 7
+[2025-05-30 14:30:23] Evaluation data retrieved successfully
+[30-May-2025 14:30:23 UTC] PHP Warning:  preg_replace(): Compilation failed: lookbehind assertion is not fixed length at offset 0 in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 132
+[2025-05-30 14:30:23] PDF filename set to: relatorio-Mateus-30-05-2025.pdf
+[2025-05-30 14:31:26] Generating PDF for evaluation ID: 7
+[2025-05-30 14:31:26] Evaluation data retrieved successfully
+[30-May-2025 14:31:26 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:31:26] PDF filename set to: relatorio-Mateus-30-05-2025.pdf
+[2025-05-30 14:32:21] Generating PDF for evaluation ID: 8
+[2025-05-30 14:32:21] Error: Evaluation not found for ID: 8
+[30-May-2025 14:32:21 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 8
+[2025-05-30 14:32:36] Generating PDF for evaluation ID: 8
+[2025-05-30 14:32:36] Evaluation data retrieved successfully
+[30-May-2025 14:32:36 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:32:36] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[2025-05-30 14:36:09] Generating PDF for evaluation ID: 8
+[2025-05-30 14:36:09] Evaluation data retrieved successfully
+[30-May-2025 14:36:09 UTC] PHP Warning:  preg_replace(): Compilation failed: lookbehind assertion is not fixed length at offset 0 in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 177
+[2025-05-30 14:36:09] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[2025-05-30 14:36:09] mPDF temp directory set to: /tmp/mpdf_tmp
+[2025-05-30 14:36:09] mPDF initialized. Setting properties...
+[2025-05-30 14:36:09] Writing HTML to mPDF...
+[2025-05-30 14:36:09] HTML written to mPDF successfully.
+[2025-05-30 14:37:12] Generating PDF for evaluation ID: 8
+[2025-05-30 14:37:12] Evaluation data retrieved successfully
+[30-May-2025 14:37:12 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 103
+[2025-05-30 14:37:12] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[2025-05-30 14:37:28] Generating PDF for evaluation ID: 8
+[2025-05-30 14:37:28] Evaluation data retrieved successfully
+[30-May-2025 14:37:28 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:37:28] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[2025-05-30 14:45:57] Generating PDF for evaluation ID: 8
+[2025-05-30 14:45:57] Evaluation data retrieved successfully
+[30-May-2025 14:45:57 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:45:57] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[2025-05-30 14:47:17] Generating PDF for evaluation ID: 8
+[2025-05-30 14:47:17] Evaluation data retrieved successfully
+[30-May-2025 14:47:17 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:47:17] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[2025-05-30 14:47:45] Generating PDF for evaluation ID: 8
+[2025-05-30 14:47:45] Evaluation data retrieved successfully
+[30-May-2025 14:47:45 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:47:45] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[2025-05-30 14:49:17] Generating PDF for evaluation ID: 8
+[2025-05-30 14:49:17] Evaluation data retrieved successfully
+[30-May-2025 14:49:17 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:49:17] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[30-May-2025 14:49:18 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 510
+[2025-05-30 14:49:21] Generating PDF for evaluation ID: 7
+[2025-05-30 14:49:21] Evaluation data retrieved successfully
+[30-May-2025 14:49:21 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:49:21] PDF filename set to: relatorio-Mateus-30-05-2025.pdf
+[30-May-2025 14:49:22 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 510
+[2025-05-30 14:49:53] Generating PDF for evaluation ID: 8
+[2025-05-30 14:49:53] Evaluation data retrieved successfully
+[30-May-2025 14:49:53 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 112
+[2025-05-30 14:49:53] PDF filename set to: relatorio-rafaella-30-05-2025.pdf
+[30-May-2025 14:49:53 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 510
+[2025-05-30 14:50:47] Generating PDF for evaluation ID: 8
+[2025-05-30 14:50:47] Evaluation data retrieved successfully
+[30-May-2025 14:50:47 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[30-May-2025 14:50:47 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-05-30 14:50:47] PDF filename set to: 
+[30-May-2025 14:50:47 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-05-30 14:57:08] Generating PDF for evaluation ID: 8
+[2025-05-30 14:57:08] Evaluation data retrieved successfully
+[30-May-2025 14:57:08 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[30-May-2025 14:57:08 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-05-30 14:57:08] PDF filename set to: 
+[30-May-2025 14:57:08 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-05-30 14:58:56] Generating PDF for evaluation ID: 8
+[2025-05-30 14:58:56] Evaluation data retrieved successfully
+[30-May-2025 14:58:56 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[30-May-2025 14:58:56 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-05-30 14:58:56] PDF filename set to: 
+[30-May-2025 14:58:56 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-05-30 15:00:20] Generating PDF for evaluation ID: 8
+[2025-05-30 15:00:20] Evaluation data retrieved successfully
+[30-May-2025 15:00:20 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[30-May-2025 15:00:20 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-05-30 15:00:20] PDF filename set to: 
+[30-May-2025 15:00:20 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-05-30 15:02:57] Generating PDF for evaluation ID: 5
+[2025-05-30 15:02:57] Evaluation data retrieved successfully
+[30-May-2025 15:02:57 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[30-May-2025 15:02:57 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-05-30 15:02:57] PDF filename set to: 
+[30-May-2025 15:02:57 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-05-30 15:17:38] Generating PDF for evaluation ID: 9
+[2025-05-30 15:17:38] Error: Evaluation not found for ID: 9
+[30-May-2025 15:17:38 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 9
+[2025-05-30 16:00:51] Generating PDF for evaluation ID: 10
+[2025-05-30 16:00:51] Error: Evaluation not found for ID: 10
+[30-May-2025 16:00:51 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 10
+[2025-05-30 16:02:16] Generating PDF for evaluation ID: 10
+[2025-05-30 16:02:16] Evaluation data retrieved successfully
+[30-May-2025 16:02:16 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[30-May-2025 16:02:16 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-05-30 16:02:16] PDF filename set to: 
+[30-May-2025 16:02:17 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-05-30 18:17:06] Generating PDF for evaluation ID: 3
+[2025-05-30 18:17:06] Evaluation data retrieved successfully
+[30-May-2025 18:17:06 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[30-May-2025 18:17:06 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-05-30 18:17:06] PDF filename set to: 
+[30-May-2025 18:17:06 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-05-31 04:57:50] Generating PDF for evaluation ID: 11
+[2025-05-31 04:57:50] Error: Evaluation not found for ID: 11
+[31-May-2025 04:57:50 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 11
+[2025-05-31 19:40:49] Generating PDF for evaluation ID: 12
+[2025-05-31 19:40:49] Error: Evaluation not found for ID: 12
+[31-May-2025 19:40:49 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 12
+[2025-05-31 19:43:04] Generating PDF for evaluation ID: 13
+[2025-05-31 19:43:04] Error: Evaluation not found for ID: 13
+[31-May-2025 19:43:04 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 13
+[2025-05-31 19:44:47] Generating PDF for evaluation ID: 13
+[2025-05-31 19:44:47] Evaluation data retrieved successfully
+[31-May-2025 19:44:47 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[31-May-2025 19:44:47 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-05-31 19:44:47] PDF filename set to: 
+[31-May-2025 19:44:47 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-05-31 19:45:16] Generating PDF for evaluation ID: 14
+[2025-05-31 19:45:16] Error: Evaluation not found for ID: 14
+[31-May-2025 19:45:16 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 14
+[2025-05-31 20:43:22] Generating PDF for evaluation ID: 15
+[2025-05-31 20:43:22] Error: Evaluation not found for ID: 15
+[31-May-2025 20:43:22 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 15
+[2025-05-31 20:46:27] Generating PDF for evaluation ID: 16
+[2025-05-31 20:46:27] Error: Evaluation not found for ID: 16
+[31-May-2025 20:46:27 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 16
+[2025-06-02 11:10:17] Generating PDF for evaluation ID: 17
+[2025-06-02 11:10:17] Error: Evaluation not found for ID: 17
+[02-Jun-2025 11:10:17 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 17
+[2025-06-02 11:45:00] Generating PDF for evaluation ID: 18
+[2025-06-02 11:45:00] Error: Evaluation not found for ID: 18
+[02-Jun-2025 11:45:00 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 18
+[2025-06-02 11:58:08] Generating PDF for evaluation ID: 19
+[2025-06-02 11:58:08] Error: Evaluation not found for ID: 19
+[02-Jun-2025 11:58:08 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 19
+[2025-06-02 11:58:47] Generating PDF for evaluation ID: 20
+[2025-06-02 11:58:47] Error: Evaluation not found for ID: 20
+[02-Jun-2025 11:58:47 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 20
+[2025-06-02 12:04:58] Generating PDF for evaluation ID: 21
+[2025-06-02 12:04:58] Error: Evaluation not found for ID: 21
+[02-Jun-2025 12:04:58 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 21
+[2025-06-02 12:14:46] Generating PDF for evaluation ID: 22
+[2025-06-02 12:14:46] Error: Evaluation not found for ID: 22
+[02-Jun-2025 12:14:46 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 22
+[2025-06-02 12:17:51] Generating PDF for evaluation ID: 23
+[2025-06-02 12:17:51] Error: Evaluation not found for ID: 23
+[02-Jun-2025 12:17:51 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 23
+[2025-06-02 12:18:19] Generating PDF for evaluation ID: 24
+[2025-06-02 12:18:19] Error: Evaluation not found for ID: 24
+[02-Jun-2025 12:18:19 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 24
+[2025-06-02 12:19:43] Generating PDF for evaluation ID: 25
+[2025-06-02 12:19:43] Error: Evaluation not found for ID: 25
+[02-Jun-2025 12:19:43 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 25
+[2025-06-02 12:27:53] Generating PDF for evaluation ID: 26
+[2025-06-02 12:27:53] Error: Evaluation not found for ID: 26
+[02-Jun-2025 12:27:53 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 26
+[2025-06-02 12:38:42] Generating PDF for evaluation ID: 27
+[2025-06-02 12:38:42] Error: Evaluation not found for ID: 27
+[02-Jun-2025 12:38:42 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 27
+[2025-06-02 12:55:46] Generating PDF for evaluation ID: 10
+[2025-06-02 12:55:46] Evaluation data retrieved successfully
+[02-Jun-2025 12:55:46 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[02-Jun-2025 12:55:46 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-02 12:55:46] PDF filename set to: 
+[02-Jun-2025 12:55:46 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-02 12:59:19] Generating PDF for evaluation ID: 28
+[2025-06-02 12:59:19] Error: Evaluation not found for ID: 28
+[02-Jun-2025 12:59:19 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 28
+[2025-06-02 13:12:02] Generating PDF for evaluation ID: 29
+[2025-06-02 13:12:02] Error: Evaluation not found for ID: 29
+[02-Jun-2025 13:12:02 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 29
+[2025-06-02 13:14:24] Generating PDF for evaluation ID: 30
+[2025-06-02 13:14:24] Error: Evaluation not found for ID: 30
+[02-Jun-2025 13:14:24 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 30
+[2025-06-02 13:15:08] Generating PDF for evaluation ID: 31
+[2025-06-02 13:15:08] Error: Evaluation not found for ID: 31
+[02-Jun-2025 13:15:08 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 31
+[2025-06-02 20:15:23] Generating PDF for evaluation ID: 32
+[2025-06-02 20:15:23] Error: Evaluation not found for ID: 32
+[02-Jun-2025 20:15:23 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 32
+[2025-06-02 20:17:59] Generating PDF for evaluation ID: 3
+[2025-06-02 20:17:59] Evaluation data retrieved successfully
+[02-Jun-2025 20:17:59 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[02-Jun-2025 20:17:59 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-02 20:17:59] PDF filename set to: 
+[02-Jun-2025 20:17:59 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-03 00:43:21] Generating PDF for evaluation ID: 33
+[2025-06-03 00:43:21] Error: Evaluation not found for ID: 33
+[03-Jun-2025 00:43:21 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 33
+[2025-06-03 11:38:14] Generating PDF for evaluation ID: 34
+[2025-06-03 11:38:14] Error: Evaluation not found for ID: 34
+[03-Jun-2025 11:38:14 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 34
+[2025-06-03 15:10:13] Generating PDF for evaluation ID: 18
+[2025-06-03 15:10:13] Evaluation data retrieved successfully
+[03-Jun-2025 15:10:13 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[03-Jun-2025 15:10:13 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-03 15:10:13] PDF filename set to: 
+[03-Jun-2025 15:10:13 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-03 15:11:00] Generating PDF for evaluation ID: 35
+[2025-06-03 15:11:00] Error: Evaluation not found for ID: 35
+[03-Jun-2025 15:11:00 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 35
+[2025-06-03 15:12:56] Generating PDF for evaluation ID: 35
+[2025-06-03 15:12:56] Evaluation data retrieved successfully
+[03-Jun-2025 15:12:56 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[03-Jun-2025 15:12:56 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-03 15:12:56] PDF filename set to: 
+[03-Jun-2025 15:12:57 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-03 15:14:44] Generating PDF for evaluation ID: 36
+[2025-06-03 15:14:44] Error: Evaluation not found for ID: 36
+[03-Jun-2025 15:14:44 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 36
+[2025-06-07 00:35:11] Generating PDF for evaluation ID: 37
+[2025-06-07 00:35:11] Error: Evaluation not found for ID: 37
+[07-Jun-2025 00:35:11 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 37
+[2025-06-07 00:37:24] Generating PDF for evaluation ID: 3
+[2025-06-07 00:37:24] Evaluation data retrieved successfully
+[07-Jun-2025 00:37:24 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[07-Jun-2025 00:37:24 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-07 00:37:24] PDF filename set to: 
+[07-Jun-2025 00:37:24 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-16 11:18:04] Generating PDF for evaluation ID: 38
+[2025-06-16 11:18:04] Error: Evaluation not found for ID: 38
+[16-Jun-2025 11:18:04 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 38
+[2025-06-19 13:51:44] Generating PDF for evaluation ID: 39
+[2025-06-19 13:51:44] Error: Evaluation not found for ID: 39
+[19-Jun-2025 13:51:44 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 39
+[2025-06-19 13:58:03] Generating PDF for evaluation ID: 40
+[2025-06-19 13:58:03] Error: Evaluation not found for ID: 40
+[19-Jun-2025 13:58:03 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 40
+[2025-06-19 13:58:28] Generating PDF for evaluation ID: 41
+[2025-06-19 13:58:28] Error: Evaluation not found for ID: 41
+[19-Jun-2025 13:58:28 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 41
+[2025-06-19 14:00:08] Generating PDF for evaluation ID: 42
+[2025-06-19 14:00:08] Error: Evaluation not found for ID: 42
+[19-Jun-2025 14:00:08 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 42
+[2025-06-23 22:08:39] Generating PDF for evaluation ID: 43
+[2025-06-23 22:08:39] Error: Evaluation not found for ID: 43
+[23-Jun-2025 22:08:39 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 43
+[2025-06-25 11:11:24] Generating PDF for evaluation ID: 42
+[2025-06-25 11:11:24] Evaluation data retrieved successfully
+[25-Jun-2025 11:11:24 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[25-Jun-2025 11:11:24 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-25 11:11:24] PDF filename set to: 
+[25-Jun-2025 11:11:24 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-25 11:11:44] Generating PDF for evaluation ID: 43
+[2025-06-25 11:11:44] Evaluation data retrieved successfully
+[25-Jun-2025 11:11:44 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[25-Jun-2025 11:11:44 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-25 11:11:44] PDF filename set to: 
+[25-Jun-2025 11:11:44 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-25 11:11:54] Generating PDF for evaluation ID: 27
+[2025-06-25 11:11:54] Evaluation data retrieved successfully
+[25-Jun-2025 11:11:54 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[25-Jun-2025 11:11:54 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-25 11:11:54] PDF filename set to: 
+[25-Jun-2025 11:11:54 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-25 11:11:55] Generating PDF for evaluation ID: 27
+[2025-06-25 11:11:55] Evaluation data retrieved successfully
+[25-Jun-2025 11:11:55 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[25-Jun-2025 11:11:55 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-25 11:11:55] PDF filename set to: 
+[25-Jun-2025 11:11:55 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-25 11:12:42] Generating PDF for evaluation ID: 44
+[2025-06-25 11:12:42] Error: Evaluation not found for ID: 44
+[25-Jun-2025 11:12:42 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 44
+[2025-06-25 11:12:59] Generating PDF for evaluation ID: 44
+[2025-06-25 11:12:59] Evaluation data retrieved successfully
+[25-Jun-2025 11:12:59 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[25-Jun-2025 11:12:59 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-06-25 11:12:59] PDF filename set to: 
+[25-Jun-2025 11:12:59 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-06-25 18:07:20] Generating PDF for evaluation ID: 45
+[2025-06-25 18:07:20] Error: Evaluation not found for ID: 45
+[25-Jun-2025 18:07:20 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 45
+[2025-07-04 19:10:34] Generating PDF for evaluation ID: 46
+[2025-07-04 19:10:34] Error: Evaluation not found for ID: 46
+[04-Jul-2025 19:10:34 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 46
+[2025-07-05 15:06:01] Generating PDF for evaluation ID: 47
+[2025-07-05 15:06:01] Error: Evaluation not found for ID: 47
+[05-Jul-2025 15:06:01 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 47
+[2025-07-06 21:57:07] Generating PDF for evaluation ID: 48
+[2025-07-06 21:57:07] Error: Evaluation not found for ID: 48
+[06-Jul-2025 21:57:07 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 48
+[2025-07-06 21:58:25] Generating PDF for evaluation ID: 48
+[2025-07-06 21:58:25] Evaluation data retrieved successfully
+[06-Jul-2025 21:58:25 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[06-Jul-2025 21:58:25 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-07-06 21:58:25] PDF filename set to: 
+[06-Jul-2025 21:58:25 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-07-07 12:30:23] Generating PDF for evaluation ID: 49
+[2025-07-07 12:30:23] Error: Evaluation not found for ID: 49
+[07-Jul-2025 12:30:23 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 49
+[2025-07-07 13:28:32] Generating PDF for evaluation ID: 50
+[2025-07-07 13:28:32] Error: Evaluation not found for ID: 50
+[07-Jul-2025 13:28:32 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 50
+[2025-07-07 20:37:23] Generating PDF for evaluation ID: 51
+[2025-07-07 20:37:23] Error: Evaluation not found for ID: 51
+[07-Jul-2025 20:37:23 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 51
+[2025-07-07 21:42:53] Generating PDF for evaluation ID: 52
+[2025-07-07 21:42:53] Error: Evaluation not found for ID: 52
+[07-Jul-2025 21:42:53 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 52
+[2025-07-09 16:28:45] Generating PDF for evaluation ID: 53
+[2025-07-09 16:28:45] Error: Evaluation not found for ID: 53
+[09-Jul-2025 16:28:45 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 53
+[2025-07-09 17:20:13] Generating PDF for evaluation ID: 54
+[2025-07-09 17:20:13] Error: Evaluation not found for ID: 54
+[09-Jul-2025 17:20:13 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 54
+[2025-07-09 20:35:48] Generating PDF for evaluation ID: 55
+[2025-07-09 20:35:48] Error: Evaluation not found for ID: 55
+[09-Jul-2025 20:35:48 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 55
+[2025-07-09 20:37:06] Generating PDF for evaluation ID: 52
+[2025-07-09 20:37:06] Evaluation data retrieved successfully
+[09-Jul-2025 20:37:06 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[09-Jul-2025 20:37:06 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-07-09 20:37:06] PDF filename set to: 
+[09-Jul-2025 20:37:06 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-07-09 21:25:20] Generating PDF for evaluation ID: 56
+[2025-07-09 21:25:20] Error: Evaluation not found for ID: 56
+[09-Jul-2025 21:25:20 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 56
+[2025-07-09 21:26:21] Generating PDF for evaluation ID: 56
+[2025-07-09 21:26:21] Evaluation data retrieved successfully
+[09-Jul-2025 21:26:21 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[09-Jul-2025 21:26:21 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-07-09 21:26:21] PDF filename set to: 
+[09-Jul-2025 21:26:21 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-07-13 16:44:49] Generating PDF for evaluation ID: 57
+[2025-07-13 16:44:49] Error: Evaluation not found for ID: 57
+[13-Jul-2025 16:44:49 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 57
+[2025-07-13 16:45:39] Generating PDF for evaluation ID: 57
+[2025-07-13 16:45:39] Evaluation data retrieved successfully
+[13-Jul-2025 16:45:39 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[13-Jul-2025 16:45:39 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-07-13 16:45:39] PDF filename set to: 
+[13-Jul-2025 16:45:39 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-07-13 23:16:06] Generating PDF for evaluation ID: 58
+[2025-07-13 23:16:06] Error: Evaluation not found for ID: 58
+[13-Jul-2025 23:16:06 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 58
+[2025-07-13 23:16:56] Generating PDF for evaluation ID: 59
+[2025-07-13 23:16:56] Error: Evaluation not found for ID: 59
+[13-Jul-2025 23:16:56 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 59
+[2025-07-13 23:17:23] Generating PDF for evaluation ID: 60
+[2025-07-13 23:17:23] Error: Evaluation not found for ID: 60
+[13-Jul-2025 23:17:23 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 60
+[2025-07-13 23:17:47] Generating PDF for evaluation ID: 61
+[2025-07-13 23:17:47] Error: Evaluation not found for ID: 61
+[13-Jul-2025 23:17:47 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 61
+[2025-07-13 23:32:57] Generating PDF for evaluation ID: 62
+[2025-07-13 23:32:57] Error: Evaluation not found for ID: 62
+[13-Jul-2025 23:32:57 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 62
+[2025-07-13 23:34:06] Generating PDF for evaluation ID: 62
+[2025-07-13 23:34:06] Evaluation data retrieved successfully
+[13-Jul-2025 23:34:06 UTC] PHP Warning:  Undefined array key "idade_bebe" in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 120
+[13-Jul-2025 23:34:06 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 65
+[2025-07-13 23:34:06] PDF filename set to: 
+[13-Jul-2025 23:34:06 UTC] PHP Warning:  preg_replace(): Unknown modifier ':' in /home/u276298767/domains/passoafrente.site/public_html/api/generate_pdf_from_db.php on line 518
+[2025-07-13 23:35:06] Generating PDF for evaluation ID: 63
+[2025-07-13 23:35:06] Error: Evaluation not found for ID: 63
+[13-Jul-2025 23:35:06 UTC] Erro ao gerar PDF automaticamente para avaliação ID: 63

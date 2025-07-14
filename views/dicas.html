@@ -1,0 +1,803 @@
+<style>
+    /* Estilos específicos para a página de dicas */
+    .tips-hero {
+        padding: 2rem 0;
+
+    }
+
+    .tips-hero .container {
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        padding: 3rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .tips-hero h1 {
+        font-size: 2.5rem;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+
+    .tips-hero p {
+        font-size: 1.1rem;
+        color: var(--text-color);
+        max-width: 800px;
+        margin: 0 auto 2rem;
+    }
+
+    /* Navegação por abas - estilo card */
+    .tabs-nav {
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        margin: 2rem 0;
+        list-style: none;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tabs-nav li {
+        flex: 1;
+        min-width: 200px;
+        width: 100%;
+    }
+
+    .tabs-nav a {
+        display: block;
+        padding: .75rem 1rem;
+        background: linear-gradient(135deg, var(--background-color) 0%, #f8d7d7 100%);
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 25px;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(181, 230, 216, 0.3);
+    }
+
+    .tabs-nav a:hover,
+    .tabs-nav a.active {
+        background: linear-gradient(135deg, var(--primary-color) 0%, #c54a52 100%);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(168, 67, 74, 0.4);
+    }
+
+    .tab-content {
+        display: none;
+        padding: 2rem 0;
+    }
+    .tab-content:nth-of-type(1){
+        padding: 0;
+    }
+    .tab-content.active {
+        display: block;
+    }
+
+    /* Acordeão para dicas por idade */
+    .age-accordion {
+        margin-bottom: 2rem;
+    }
+
+    .age-accordion-item {
+        margin-bottom: 1.5rem;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border: 2px solid transparent;
+        background: linear-gradient(145deg, white 0%, #fafafa 100%);
+        transition: all 0.3s ease;
+    }
+
+    .age-accordion-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .age-accordion-header {
+        background: linear-gradient(135deg, var(--primary-color) 0%, #c54a52 100%);
+        color: white;
+        padding: .5rem 1.5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .age-accordion-header:hover {
+        background: linear-gradient(135deg, #c54a52 0%, var(--primary-color) 100%);
+    }
+
+    .age-accordion-header h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .age-accordion-header .icon {
+        transition: all 0.3s ease;
+        font-size: 1.2rem;
+    }
+
+    .age-accordion-header.active .icon {
+        transform: rotate(180deg);
+    }
+
+    .age-accordion-content {
+        background-color: white;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .age-accordion-content.active {
+        padding: 2rem;
+        max-height: 2000px;
+    }
+
+    .tip-item {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        border-left: 4px solid var(--accent-color);
+        background-color: #fafafa;
+        border-radius: 0 15px 15px 0;
+        transition: all 0.3s ease;
+    }
+
+    .tip-item:hover {
+        background-color: #f0f0f0;
+        border-left-color: var(--primary-color);
+    }
+
+    .tip-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .tip-item h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .tip-item p {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+
+    .tip-item ul {
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .tip-item li {
+        margin-bottom: 0.3rem;
+    }
+
+    /* Seção de conteúdo principal */
+    .tips-section {
+        padding: 1rem 0;
+        background-color: var(--background-color);
+    }
+
+    .mb-4 {
+        margin-bottom: 1rem;
+    }
+
+    /* Títulos das seções */
+    #vacinacao > h2,
+    #marcos > h2 {
+        color: var(--primary-color);
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    /* Calendário de vacinação */
+    .vaccination-calendar {
+        background: linear-gradient(145deg, white 0%, #fafafa 100%);
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        padding: 2rem;
+        margin-top: 1rem;
+        border: 1px solid #f0f0f0;
+    }
+
+    .vaccination-calendar h3 {
+        color: var(--primary-color);
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .vaccination-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+
+    .vaccination-table th,
+    .vaccination-table td {
+        padding: 0.8rem;
+        text-align: left;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .vaccination-table th {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .vaccination-table tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+
+    .vaccination-table tr:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    #vacinacao>div>table>tbody>tr:nth-child(odd) {
+        /* estilo desejado aqui */
+        background-color: var(--background-color);
+        /* exemplo */
+    }
+
+    /* Marcos do desenvolvimento */
+    .milestone-tracker {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .milestone-item {
+        background-color: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        border: 1px solid var(--secondary-color);
+    }
+
+    .milestone-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .milestone-item h4 {
+        color: var(--primary-color);
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    body>main>div>div>ul>li>a {
+        border: solid 1px var(--primary-color);
+        border-radius: .5rem;
+        width: 60%;
+        margin: 0 auto
+    }
+
+    .milestone-item ul {
+        padding-left: 1.2rem;
+    }
+
+    .milestone-item li {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Elementos interativos */
+    .interactive-element {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin: 2rem 0;
+        text-align: center;
+        border: 1px solid #f0f0f0;
+    }
+
+    .interactive-element h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    /* Imagens */
+    .tip-image {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    .tip-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Botões - usando o mesmo estilo do site original */
+    .btn {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .primary-btn {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .secondary-btn {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+
+    ul {
+        text-align: start;
+    }
+.tips-grid{
+    display: grid
+;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .tabs-nav {
+            flex-direction: column;
+        }
+body>main>div>div>ul>li>a{
+    width: 95%;
+}
+        .tips-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .milestone-tracker {
+            grid-template-columns: 1fr;
+        }
+
+        .vaccination-table {
+            font-size: 0.9rem;
+        }
+
+        .vaccination-table th,
+        .vaccination-table td {
+            padding: 0.5rem;
+        }
+    }
+</style>
+
+
+<main>
+    <!-- Seção Hero -->
+    <section class="tips-hero">
+        <div class="container">
+            <h1>Dicas para o Desenvolvimento Motor Infantil</h1>
+            <p>Orientações práticas para estimular o desenvolvimento do seu bebê em cada fase. Lembre-se que cada
+                bebê tem seu próprio ritmo de desenvolvimento.</p>
+            
+            <ul class="tabs-nav">
+                <li><a href="#dicas" class="active">Dicas por Idade</a></li>
+                <li><a href="#vacinacao">Calendário de Vacinação</a></li>
+                <li><a href="#marcos">Marcos do Desenvolvimento</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção de Conteúdo -->
+    <section class="tips-section">
+        <div class="container">
+            <!-- Aba de Dicas por Idade -->
+            <div id="dicas" class="tab-content active">
+                <div class="age-accordion">
+                    <!-- 0-3 meses -->
+                    <div class="age-accordion-item">
+                        <div class="age-accordion-header">
+                            <h3>0-3 meses</h3>
+                            <span class="icon">▼</span>
+                        </div>
+                        <div class="age-accordion-content">
+                            <div class="tip-item">
+                                <h4>Tempo de Barriga para Baixo (Tummy Time)</h4>
+                                <p>Coloque o bebê de barriga para baixo por curtos períodos (3-5 minutos) várias vezes
+                                    ao dia quando ele estiver acordado e supervisionado. Isso ajuda a fortalecer os
+                                    músculos do pescoço e ombros.</p>
+                                <ul>
+                                    <li>Coloque brinquedos coloridos ou um espelho à frente do bebê para estimular o
+                                        interesse</li>
+                                    <li>Deite-se de frente para o bebê para incentivá-lo a levantar a cabeça</li>
+                                    <li>Use uma toalha enrolada sob o peito do bebê para dar suporte adicional</li>
+                                </ul>
+                            </div>
+                            <div class="tip-item">
+                                <h4>Estimulação Visual e Auditiva</h4>
+                                <p>Nesta fase, a visão e audição do bebê estão se desenvolvendo rapidamente.</p>
+                                <ul>
+                                    <li>Mostre objetos de alto contraste (preto e branco) a uma distância de 20-30 cm
+                                    </li>
+                                    <li>Converse com o bebê em diferentes tons de voz</li>
+                                    <li>Use chocalhos e brinquedos que emitem sons suaves</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4-6 meses -->
+                    <div class="age-accordion-item">
+                        <div class="age-accordion-header">
+                            <h3>4-6 meses</h3>
+                            <span class="icon">▼</span>
+                        </div>
+                        <div class="age-accordion-content">
+                            <div class="tip-item">
+                                <h4>Sentar com Apoio</h4>
+                                <p>Nesta fase, o bebê começa a desenvolver controle do tronco e pode sentar-se com
+                                    apoio.</p>
+                                <ul>
+                                    <li>Use almofadas ou travesseiros para dar suporte ao bebê na posição sentada</li>
+                                    <li>Sente-se atrás do bebê e ofereça apoio suave</li>
+                                    <li>Coloque brinquedos ao alcance para incentivar o movimento</li>
+                                </ul>
+                            </div>
+                            <div class="tip-item">
+                                <h4>Alcançar e Agarrar</h4>
+                                <p>O bebê está desenvolvendo a coordenação olho-mão e tentará alcançar objetos.</p>
+                                <ul>
+                                    <li>Ofereça brinquedos de diferentes texturas e tamanhos</li>
+                                    <li>Pendure brinquedos macios ao alcance do bebê</li>
+                                    <li>Incentive a transferência de objetos de uma mão para outra</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7-9 meses -->
+                    <div class="age-accordion-item">
+                        <div class="age-accordion-header">
+                            <h3>7-9 meses</h3>
+                            <span class="icon">▼</span>
+                        </div>
+                        <div class="age-accordion-content">
+                            <div class="tip-item">
+                                <h4>Engatinhar</h4>
+                                <p>Nesta fase, muitos bebês começam a se arrastar e engatinhar.</p>
+                                <ul>
+                                    <li>Crie um espaço seguro no chão para o bebê explorar</li>
+                                    <li>Coloque brinquedos favoritos a uma curta distância para incentivar o movimento
+                                    </li>
+                                    <li>Posicione o bebê de barriga para baixo e ajude-o a apoiar-se nas mãos e joelhos
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tip-item">
+                                <h4>Sentar sem Apoio</h4>
+                                <p>O bebê está desenvolvendo equilíbrio para sentar-se sozinho.</p>
+                                <ul>
+                                    <li>Pratique a posição sentada em superfícies macias</li>
+                                    <li>Coloque brinquedos ao redor para incentivar o alcance em diferentes direções
+                                    </li>
+                                    <li>Ajude o bebê a passar da posição deitada para sentada</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10-12 meses -->
+                    <div class="age-accordion-item">
+                        <div class="age-accordion-header">
+                            <h3>10-12 meses</h3>
+                            <span class="icon">▼</span>
+                        </div>
+                        <div class="age-accordion-content">
+                            <div class="tip-item">
+                                <h4>Ficar em Pé e Dar Passos</h4>
+                                <p>Nesta fase, o bebê começa a puxar-se para ficar em pé e pode dar passos com apoio.
+                                </p>
+                                <ul>
+                                    <li>Ofereça móveis estáveis para o bebê se apoiar</li>
+                                    <li>Segure as mãos do bebê enquanto ele pratica dar passos</li>
+                                    <li>Use brinquedos de empurrar para incentivar a caminhada com apoio</li>
+                                </ul>
+                            </div>
+                            <div class="tip-item">
+                                <h4>Habilidades com as Mãos</h4>
+                                <p>O bebê está desenvolvendo a pinça fina e manipulação de objetos.</p>
+                                <ul>
+                                    <li>Ofereça alimentos pequenos e seguros para o bebê praticar pegar (sempre
+                                        supervisionado)</li>
+                                    <li>Incentive o bebê a colocar objetos em recipientes e retirá-los</li>
+                                    <li>Ofereça livros de papelão para o bebê virar as páginas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 13-18 meses -->
+                    <div class="age-accordion-item">
+                        <div class="age-accordion-header">
+                            <h3>13-18 meses</h3>
+                            <span class="icon">▼</span>
+                        </div>
+                        <div class="age-accordion-content">
+                            <div class="tip-item">
+                                <h4>Caminhar Independentemente</h4>
+                                <p>Nesta fase, a maioria dos bebês começa a andar sem apoio.</p>
+                                <ul>
+                                    <li>Crie um ambiente seguro para o bebê explorar caminhando</li>
+                                    <li>Incentive o bebê a caminhar entre os móveis ou entre duas pessoas</li>
+                                    <li>Use brinquedos que o bebê possa empurrar enquanto anda</li>
+                                </ul>
+                            </div>
+                            <div class="tip-item">
+                                <h4>Subir e Descer</h4>
+                                <p>O bebê está desenvolvendo habilidades para subir em móveis e escadas (com
+                                    supervisão).</p>
+                                <ul>
+                                    <li>Crie pequenos obstáculos seguros para o bebê subir e descer</li>
+                                    <li>Supervisione o bebê enquanto ele pratica subir em sofás ou escadas</li>
+                                    <li>Ensine o bebê a descer sentado e de costas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="tips-grid">
+                    <div class="card">
+                        <h3>Ambiente Seguro</h3>
+                        <p class="mb-4">Crie um ambiente seguro onde o bebê possa explorar e praticar suas habilidades
+                            motoras sem riscos.</p>
+                        <ul>
+                            <li>Remova objetos pequenos que possam ser engolidos</li>
+                            <li>Proteja cantos afiados de móveis</li>
+                            <li>Bloqueie o acesso a escadas e áreas perigosas</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Respeite o Ritmo</h3>
+                        <p class="mb-4">Cada bebê tem seu próprio ritmo de desenvolvimento. Respeite o tempo do seu
+                            filho e não force atividades para as quais ele não está pronto.</p>
+                        <ul>
+                            <li>Observe os sinais de interesse do bebê</li>
+                            <li>Não compare com outros bebês</li>
+                            <li>Celebre cada conquista, por menor que seja</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Consistência</h3>
+                        <p class="mb-4">Pratique atividades de estimulação regularmente, mas por períodos curtos,
+                            respeitando os sinais de cansaço ou desinteresse do bebê.</p>
+                        <ul>
+                            <li>Crie uma rotina diária de atividades</li>
+                            <li>Alterne entre diferentes tipos de estímulos</li>
+                            <li>Respeite os momentos de descanso</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba de Calendário de Vacinação -->
+            <div id="vacinacao" class="tab-content">
+                <h2>Calendário Nacional de Vacinação Infantil</h2>
+                <p>Confira as vacinas recomendadas para cada idade do seu bebê. Mantenha a caderneta de vacinação sempre
+                    atualizada!</p>
+
+                <div class="vaccination-calendar">
+                    <h3>Vacinas por Idade</h3>
+                    <table class="vaccination-table">
+                        <thead>
+                            <tr>
+                                <th>Idade</th>
+                                <th>Vacinas</th>
+                                <th>Doenças Evitadas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ao nascer</td>
+                                <td>BCG<br>Hepatite B</td>
+                                <td>Formas graves de tuberculose<br>Hepatite B</td>
+                            </tr>
+                            <tr>
+                                <td>2 meses</td>
+                                <td>Penta (DTP/Hib/HB)<br>VIP<br>Pneumocócica 10V<br>Rotavírus</td>
+                                <td>Difteria, tétano, coqueluche, meningite, hepatite B<br>Poliomielite<br>Pneumonia,
+                                    meningite, otite<br>Diarreia por rotavírus</td>
+                            </tr>
+                            <tr>
+                                <td>3 meses</td>
+                                <td>Meningocócica C</td>
+                                <td>Meningite C</td>
+                            </tr>
+                            <tr>
+                                <td>4 meses</td>
+                                <td>Penta (DTP/Hib/HB)<br>VIP<br>Pneumocócica 10V<br>Rotavírus</td>
+                                <td>Difteria, tétano, coqueluche, meningite, hepatite B<br>Poliomielite<br>Pneumonia,
+                                    meningite, otite<br>Diarreia por rotavírus</td>
+                            </tr>
+                            <tr>
+                                <td>5 meses</td>
+                                <td>Meningocócica C</td>
+                                <td>Meningite C</td>
+                            </tr>
+                            <tr>
+                                <td>6 meses</td>
+                                <td>Penta (DTP/Hib/HB)<br>VIP<br>Pneumocócica 10V</td>
+                                <td>Difteria, tétano, coqueluche, meningite, hepatite B<br>Poliomielite<br>Pneumonia,
+                                    meningite, otite</td>
+                            </tr>
+                            <tr>
+                                <td>9 meses</td>
+                                <td>Febre Amarela</td>
+                                <td>Febre amarela</td>
+                            </tr>
+                            <tr>
+                                <td>12 meses</td>
+                                <td>Tríplice Viral<br>Pneumocócica 10V<br>Meningocócica C</td>
+                                <td>Sarampo, caxumba, rubéola<br>Pneumonia, meningite, otite<br>Meningite C</td>
+                            </tr>
+                            <tr>
+                                <td>15 meses</td>
+                                <td>DTP<br>VOP<br>Hepatite A<br>Tetra Viral</td>
+                                <td>Difteria, tétano, coqueluche<br>Poliomielite<br>Hepatite A<br>Sarampo, caxumba,
+                                    rubéola, varicela</td>
+                            </tr>
+                            <tr>
+                                <td>4 anos</td>
+                                <td>DTP<br>VOP<br>Varicela</td>
+                                <td>Difteria, tétano, coqueluche<br>Poliomielite<br>Varicela (catapora)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><small>* Este calendário pode sofrer alterações. Consulte sempre o pediatra ou a unidade de saúde
+                            mais próxima.</small></p>
+                </div>
+            </div>
+
+            <!-- Aba de Marcos do Desenvolvimento -->
+            <div id="marcos" class="tab-content">
+                <h2>Marcos do Desenvolvimento Motor</h2>
+                <p>Conheça os principais marcos do desenvolvimento motor que seu bebê deve atingir em cada fase.
+                    Lembre-se que cada criança tem seu próprio ritmo!</p>
+
+                <div class="milestone-tracker">
+                    <div class="milestone-item">
+                        <h4>0-3 meses</h4>
+                        <ul>
+                            <li>Levanta a cabeça brevemente quando de bruços</li>
+                            <li>Movimenta braços e pernas</li>
+                            <li>Abre e fecha as mãos</li>
+                            <li>Segue objetos com os olhos</li>
+                        </ul>
+                    </div>
+
+                    <div class="milestone-item">
+                        <h4>4-6 meses</h4>
+                        <ul>
+                            <li>Rola de barriga para cima e para baixo</li>
+                            <li>Senta com apoio</li>
+                            <li>Alcança e agarra objetos</li>
+                            <li>Transfere objetos de uma mão para outra</li>
+                        </ul>
+                    </div>
+
+                    <div class="milestone-item">
+                        <h4>7-9 meses</h4>
+                        <ul>
+                            <li>Senta sem apoio</li>
+                            <li>Arrasta-se ou engatinha</li>
+                            <li>Puxa-se para ficar em pé com apoio</li>
+                            <li>Pega objetos usando o polegar e o indicador</li>
+                        </ul>
+                    </div>
+
+                    <div class="milestone-item">
+                        <h4>10-12 meses</h4>
+                        <ul>
+                            <li>Fica em pé sozinho por momentos</li>
+                            <li>Dá passos com apoio</li>
+                            <li>Pode dar primeiros passos sozinho</li>
+                            <li>Pega e solta objetos intencionalmente</li>
+                        </ul>
+                    </div>
+
+                    <div class="milestone-item">
+                        <h4>13-18 meses</h4>
+                        <ul>
+                            <li>Anda sozinho</li>
+                            <li>Sobe escadas engatinhando</li>
+                            <li>Empilha blocos</li>
+                            <li>Começa a correr</li>
+                        </ul>
+                    </div>
+
+                    <div class="milestone-item">
+                        <h4>19-24 meses</h4>
+                        <ul>
+                            <li>Corre com mais estabilidade</li>
+                            <li>Sobe e desce escadas com ajuda</li>
+                            <li>Chuta bola</li>
+                            <li>Pula no lugar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="interactive-element">
+                    <h3>Quando Procurar Ajuda Profissional</h3>
+                    <p>Consulte um pediatra ou fisioterapeuta especializado se notar que seu bebê:</p>
+                    <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                        <li>Tem rigidez ou flacidez muscular excessiva</li>
+                        <li>Não consegue sustentar a cabeça aos 4 meses</li>
+                        <li>Não rola (para nenhuma direção) aos 6 meses</li>
+                        <li>Não senta sem apoio aos 9 meses</li>
+                        <li>Não engatinha ou se arrasta aos 12 meses</li>
+                        <li>Não anda aos 18 meses</li>
+                        <li>Perde habilidades que já havia adquirido</li>
+                    </ul>
+               
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    // JavaScript para funcionalidade das abas
+    document.addEventListener('DOMContentLoaded', function () {
+        // Navegação por abas
+        const tabLinks = document.querySelectorAll('.tabs-nav a');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Remove classe active de todas as abas
+                tabLinks.forEach(l => l.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                // Adiciona classe active na aba clicada
+                this.classList.add('active');
+
+                // Mostra o conteúdo correspondente
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).classList.add('active');
+            });
+        });
+
+        // Acordeão para faixas etárias
+        const accordionHeaders = document.querySelectorAll('.age-accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function () {
+                // Toggle classe active no header
+                this.classList.toggle('active');
+
+                // Toggle classe active no conteúdo
+                const content = this.nextElementSibling;
+                content.classList.toggle('active');
+            });
+        });
+    });
+</script>

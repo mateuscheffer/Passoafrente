@@ -1,0 +1,219 @@
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="search-container">
+                <h2>Buscar Suas Avaliações</h2>
+                <p>Digite seu email para visualizar suas avaliações de desenvolvimento motor realizadas anteriormente.
+                </p>
+
+                <div class="search-form">
+                    <form id="searchForm">
+                        <input type="email" id="searchEmail" placeholder="Digite seu email" required>
+                        <button type="submit" class="btn primary-btn">Buscar Minhas Avaliações</button>
+                    </form>
+                </div>
+
+                <div id="loading" class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Buscando avaliações...</p>
+                </div>
+
+                <div id="searchResults" class="search-results">
+                    <!-- Os resultados serão exibidos aqui -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchForm = document.getElementById('searchForm');
+            const searchResults = document.getElementById('searchResults');
+            const loading = document.getElementById('loading');
+
+            searchForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const email = document.getElementById('searchEmail').value.trim();
+
+                // Validar email obrigatório
+                if (!email || email.length === 0) {
+                    alert('Por favor, digite seu email para buscar suas avaliações.');
+                    return;
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Por favor, insira um email válido.');
+                    return;
+                }
+
+                // Mostrar loading
+                searchResults.innerHTML = '';
+                loading.style.display = 'block';
+
+                // Buscar resultados do servidor
+                setTimeout(function () {
+                    loading.style.display = 'none';
+                    fetchResults(email);
+                }, 500);
+            });
+
+            function fetchResults(email) {
+                // Construir URL da API com email obrigatório
+                const apiUrl = `../api/buscar_avaliacoes.php?email=${encodeURIComponent(email)}`;
+
+                // Fazer requisição para a API de busca
+                fetch(apiUrl, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success && data.avaliacoes && data.avaliacoes.length > 0) {
+                            // Processar e exibir os resultados
+                            const processedResults = data.avaliacoes.map(avaliacao => {
+                                // Formatar a data
+                                const dataAvaliacao = new Date(avaliacao.data_avaliacao);
+                                const dataFormatada = dataAvaliacao.toLocaleDateString('pt-BR');
+
+                                // Calcular idade em meses
+                                const idadeMeses = avaliacao.idade_meses;
+                                let idadeTexto = `${idadeMeses} meses`;
+                                if (idadeMeses >= 12) {
+                                    const anos = Math.floor(idadeMeses / 12);
+                                    const mesesRestantes = idadeMeses % 12;
+                                    idadeTexto = `${anos} ano${anos > 1 ? 's' : ''}`;
+                                    if (mesesRestantes > 0) {
+                                        idadeTexto += ` e ${mesesRestantes} meses`;
+                                    }
+                                }
+
+                                // Sempre mostrar mensagem padrão sobre PDF
+                                let resumo = 'Análise completa disponível no PDF.';
+
+                                return {
+                                    id: avaliacao.id_avaliacao,
+                                    babyName: avaliacao.nome_crianca,
+                                    age: idadeTexto,
+                                    date: dataFormatada,
+                                    summary: resumo,
+                                    pontuacao: avaliacao.pontuacao_total,
+                                    prematuridade: avaliacao.prematuro,
+                                    pcd: avaliacao.pcd,
+                                    pergunta_usuario: avaliacao.pergunta_usuario,
+                                    pdf_url: avaliacao.pdf_url
+                                };
+                            });
+
+                            displayResults(processedResults);
+                        } else {
+                            // Mostrar mensagem de nenhum resultado
+                            searchResults.innerHTML = `
+                        <div class="no-results">
+                            <p>Nenhuma avaliação encontrada para o email <strong>${email}</strong>.</p>
+                            <p>Verifique se o email está correto ou <a href="../quiz.html">realize uma nova avaliação</a>.</p>
+                        </div>
+                    `;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erro ao buscar avaliações:', error);
+                        searchResults.innerHTML = `
+                    <div class="no-results">
+                        <p>Erro ao buscar avaliações. Tente novamente mais tarde.</p>
+                        <p>Se o problema persistir, entre em contato com o suporte.</p>
+                    </div>
+                `;
+                    });
+            }
+
+            function displayResults(results) {
+                let html = '';
+
+                results.forEach(result => {
+                    // Adicionar informações extras se disponíveis
+                    let extraInfo = '';
+                    if (result.pontuacao !== undefined && result.pontuacao !== null) {
+                        extraInfo += `<span>Pontuação: ${result.pontuacao}</span>`;
+                    }
+                    if (result.prematuridade === 1) {
+                        extraInfo += `<span style="color: #ff6b6b;">Prematuridade</span>`;
+                    }
+                    if (result.pcd === 1) {
+                        extraInfo += `<span style="color: #4ecdc4;">PCD</span>`;
+                    }
+
+                    html += `
+                    <div class="result-item">
+                        <h3>${result.babyName} - ${result.age}</h3>
+                        <div class="result-meta">
+                            <span>Data da avaliação: ${result.date}</span>
+                            ${extraInfo}
+                        </div>
+                        <div class="result-content">
+                            <p>${result.summary}</p>
+                            ${result.pergunta_usuario ? `<p><strong>Pergunta:</strong> ${result.pergunta_usuario}</p>` : ''}
+                        </div>
+                        <div style="text-align: right; margin-top: 1rem;">
+                            <button class="btn-view-details" onclick="downloadPDF(${result.id}, '${result.pdf_url}')">Download PDF</button>
+                        </div>
+                    </div>
+                `;
+                });
+
+                searchResults.innerHTML = html;
+            }
+        });
+
+        function downloadPDF(id, pdfUrl) {
+            // Se já existe URL do PDF, fazer download direto
+            if (pdfUrl && pdfUrl !== 'null' && pdfUrl.trim() !== '') {
+                // Construir URL completa para o PDF
+                const fullPdfUrl = pdfUrl.startsWith('http') ? pdfUrl : `../${pdfUrl}`;
+                window.open(fullPdfUrl, '_blank');
+                return;
+            }
+
+            // Caso contrário, gerar PDF via nova API
+            const loading = document.getElementById('loading');
+            loading.style.display = 'block';
+
+            fetch(`../api/generate_pdf_from_db.php?id=${id}`, {
+                method: 'GET'
+            })
+                .then(response => {
+                    loading.style.display = 'none';
+
+                    if (response.ok) {
+                        // Criar blob do PDF e fazer download
+                        return response.blob();
+                    } else {
+                        throw new Error('Erro ao gerar PDF');
+                    }
+                })
+                .then(blob => {
+                    // Criar URL do blob e fazer download
+                    const url = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = `avaliacao_${id}.pdf`;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(error => {
+                    loading.style.display = 'none';
+                    console.error('Erro ao gerar PDF:', error);
+                    alert('Erro ao gerar PDF. Tente novamente.');
+                });
+        }
+
+
+    </script>
